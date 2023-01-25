@@ -1,10 +1,12 @@
-// import logo from './logo.svg';
+import Header from "./components/Header/Header";
+import Shop from "./components/Shop/Shop";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Hello E-Products</h2>
+        <Header/>
+        <Shop/>
       </header>
     </div>
   );
