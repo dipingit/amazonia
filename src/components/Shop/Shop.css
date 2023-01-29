@@ -1,9 +1,13 @@
 .shop-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
-.product-container{
-    width: 70%;
-    margin-left: 70px;
-    margin-right: 5px;
-    border-right: 1px solid lightgray;
+.products-container{
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px;
+}
+.cart-container{
+    background-color: rgba(255, 153, 0, 0.3);
 }
