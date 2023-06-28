@@ -6,13 +6,13 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 const Product = (props) => {
     const {img, name, seller, price, ratings} = props.product;
 
-    // const handleImageError = (e) => {
-    //     // e.target.src = placeholderImage
-    //     e.target.style.display = 'none'
-    // }
+    const handleImageError = (e) => {
+        // e.target.src = placeholderImage
+        e.target.style.display = 'none'
+    }
     return (
         <div className='product'>
-                <img src={img} alt="" />
+                <img src={img} alt="" onError={handleImageError}/>
             <div className='product-info'>
                 <p className='product-name'>{name}</p>
                 <br/>
