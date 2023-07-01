@@ -4,6 +4,8 @@ import Shop from './components/Shop/Shop';
 import About from './components/About/About';
 import Orders from './components/Orders/Orders';
 import  {productsAndCartLoader}  from "./loaders/productsAndCartLoader";
+import SignUp from "./components/SignUp/SignUp";
+import Login from "./components/Login/Login";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,11 +30,18 @@ function App() {
           {
             path: '/about',
             element: <About></About>
+          },
+          {
+            path: 'login',
+            element: <Login></Login>
+          },
+          {
+            path: 'signup',
+            element: <SignUp></SignUp>
           }
-        ]
+        ],
     },
 
-    
 
   ])
   return (
